@@ -211,6 +211,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -263,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/text-md/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/感想/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Meidianwen">
@@ -282,7 +292,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/18/text-md/" itemprop="url">text.md</a></h1>
+                <a class="post-title-link" href="/2017/12/18/感想/" itemprop="url">数据库</a></h1>
         
 
         <div class="post-meta">
@@ -334,8 +344,23 @@
       
         
           
-            <h2 id="我的博客"><a href="#我的博客" class="headerlink" title="我的博客"></a>我的博客</h2>
+          数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:
+
+create table tb_name(………) DEFAULT CHARSET=utf8;
+
+并且在写数据前，加一个语句,否则还是一串问号：
+
+set names utf8;
+
+
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/18/感想/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -453,9 +478,16 @@
       
         
           
-            <p>这是我的第一篇博客，希望我可以坚持下去，写下自己平时学习的记录。</p>
+          这是我的第一篇博客，希望我可以坚持下去，写下自己平时学习的记录。
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/18/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
