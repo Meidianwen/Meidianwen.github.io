@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="MySQL,PHP," />
+  <meta name="keywords" content="PHP,MySQL," />
 
 
 
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:12345create table tb_name(.........) DEFAULT CHARSET=utf8; 并且在写数据前，加一个语句,否则还是一串问号：  set names utf8;  PHP数组我的项目想要实现从后台向前台传一串数据，所以我决定使用二维数组。又因为从数据库中">
-<meta name="keywords" content="MySQL,PHP">
+<meta name="description" content="数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:12345create table tb_name(.........) DEFAULT CHARSET=utf8; 并且在写数据前，加一个语句,否则还是一串问号：  set names utf8;  MySQL模糊查询有四种方法可以使用：  %： 表示任意0个或多个字符。可匹配任意类型和长">
+<meta name="keywords" content="PHP,MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="杂文">
 <meta property="og:url" content="http://yoursite.com/2017/12/18/感想/index.html">
 <meta property="og:site_name" content="My_Blog">
-<meta property="og:description" content="数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:12345create table tb_name(.........) DEFAULT CHARSET=utf8; 并且在写数据前，加一个语句,否则还是一串问号：  set names utf8;  PHP数组我的项目想要实现从后台向前台传一串数据，所以我决定使用二维数组。又因为从数据库中">
+<meta property="og:description" content="数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:12345create table tb_name(.........) DEFAULT CHARSET=utf8; 并且在写数据前，加一个语句,否则还是一串问号：  set names utf8;  MySQL模糊查询有四种方法可以使用：  %： 表示任意0个或多个字符。可匹配任意类型和长">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-22T07:44:17.736Z">
+<meta property="og:updated_time" content="2017-12-22T16:16:20.660Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="杂文">
-<meta name="twitter:description" content="数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:12345create table tb_name(.........) DEFAULT CHARSET=utf8; 并且在写数据前，加一个语句,否则还是一串问号：  set names utf8;  PHP数组我的项目想要实现从后台向前台传一串数据，所以我决定使用二维数组。又因为从数据库中">
+<meta name="twitter:description" content="数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:12345create table tb_name(.........) DEFAULT CHARSET=utf8; 并且在写数据前，加一个语句,否则还是一串问号：  set names utf8;  MySQL模糊查询有四种方法可以使用：  %： 表示任意0个或多个字符。可匹配任意类型和长">
 
 
 
@@ -345,6 +345,25 @@
 <blockquote>
 <p>set names utf8;</p>
 </blockquote>
+<h2 id="MySQL模糊查询"><a href="#MySQL模糊查询" class="headerlink" title="MySQL模糊查询"></a>MySQL模糊查询</h2><p>有四种方法可以使用：</p>
+<ul>
+<li>%：<blockquote>
+<p>表示任意0个或多个字符。可匹配任意类型和长度的字符，有些情况下若是中文，请使用两个百分号（%%）表示。比如 SELECT <em> FROM [user] WHERE u_name LIKE ‘%三%’<br>将会把u_name为“张三”，“张猫三”、“三脚猫”，“唐三藏”等等有“三”的记录全找出来。<br>另外，如果需要找出u_name中既有“三”又有“猫”的记录，请使用and条件<br>SELECT </em> FROM [user] WHERE u_name LIKE ‘%三%’ AND u_name LIKE ‘%猫%’<br>若使用 SELECT * FROM [user] WHERE u_name LIKE ‘%三%猫%’<br>虽然能搜索出“三脚猫”，但不能搜索出符合条件的“张猫三”。 </p>
+</blockquote>
+</li>
+<li>_：<blockquote>
+<p>表示任意单个字符。匹配单个任意字符，它常用来限制表达式的字符长度语句：<br>比如 SELECT <em> FROM [user] WHERE u<em>name LIKE ‘</em>三_’ ，只找出“唐三藏”这样u_name为三个字且中间一个字是“三”的； 再比如 SELECT </em> FROM [user] WHERE u_name LIKE ‘三__’; 只找出“三脚猫”这样name为三个字且第一个字是“三”的； </p>
+</blockquote>
+</li>
+<li>[]：<blockquote>
+<p>表示括号内所列字符中的一个（类似正则表达式）。指定一个字符、字符串或范围，要求所匹配对象为它们中的任一个。<br>比如 SELECT <em> FROM [user] WHERE u_name LIKE ‘[张李王]三’ 将找出“张三”、“李三”、“王三”（而不是“张李王三”）；<br>如 [ ] 内有一系列字符（01234、abcde之类的）则可略写为“0-4”、“a-e”<br>SELECT </em> FROM [user] WHERE u_name LIKE ‘老[1-9]’ 将找出“老1”、“老2”、……、“老9”； </p>
+</blockquote>
+</li>
+<li>[^ ] ：<blockquote>
+<p>表示不在括号所列之内的单个字符。其取值和 [] 相同，但它要求所匹配对象为指定字符以外的任一个字符。<br>比如 SELECT <em> FROM [user] WHERE u_name LIKE ‘[^张李王]三’ 将找出不姓“张”、“李”、“王”的“赵三”、“孙三”等；<br>SELECT </em> FROM [user] WHERE u_name LIKE ‘老[^1-4]’; 将排除“老1”到“老4”，寻找“老5”、“老6”</p>
+</blockquote>
+</li>
+</ul>
 <h2 id="PHP数组"><a href="#PHP数组" class="headerlink" title="PHP数组"></a>PHP数组</h2><p>我的项目想要实现从后台向前台传一串数据，所以我决定使用二维数组。又因为从数据库中只能一行一行的取数据，每一行是一个数组，所以我想采用把每一个数组动态的添加到一个二维数组里面，最后把整个二维数组传给jQuery，方法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">private $arr2 = array();      //首先声明一个数组</span><br><span class="line"></span><br><span class="line">$sql = &quot;select * from msg&quot;;   //数据库查询语句</span><br><span class="line"></span><br><span class="line">$msg_num = $this-&gt;db-&gt;query($sql); </span><br><span class="line"></span><br><span class="line">while($msg = $msg_num-&gt;fetch_array(1))&#123; </span><br><span class="line"></span><br><span class="line">   array_push($this-&gt;arr2,$msg);   //用array_push来动态的添加数据；</span><br><span class="line">&#125;</span><br><span class="line">//print_r($this-&gt;arr2);</span><br><span class="line"></span><br><span class="line">echo json_encode($this-&gt;arr2) ;</span><br></pre></td></tr></table></figure></p>
 <p>主要采用了 <strong>array_push</strong>这个函数，使得往数组里面添加数据；</p>
 
@@ -364,9 +383,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
-          
             <a href="/tags/PHP/" rel="tag"># PHP</a>
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
           
         </div>
       
@@ -388,6 +407,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/23/project-pro/" rel="prev" title="图书搜索功能的关键实现">
+                图书搜索功能的关键实现 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -464,7 +487,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -512,7 +535,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库中存储中文"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x4E2D;&#x6587;" class="headerlink" title="&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x4E2D;&#x6587;"></a>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x4E2D;&#x6587;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP数组"><span class="nav-number">2.</span> <span class="nav-text"><a href="#PHP&#x6570;&#x7EC4;" class="headerlink" title="PHP&#x6570;&#x7EC4;"></a>PHP&#x6570;&#x7EC4;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库中存储中文"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x4E2D;&#x6587;" class="headerlink" title="&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x4E2D;&#x6587;"></a>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x4E2D;&#x6587;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL模糊查询"><span class="nav-number">2.</span> <span class="nav-text"><a href="#MySQL&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;" class="headerlink" title="MySQL&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;"></a>MySQL&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP数组"><span class="nav-number">3.</span> <span class="nav-text"><a href="#PHP&#x6570;&#x7EC4;" class="headerlink" title="PHP&#x6570;&#x7EC4;"></a>PHP&#x6570;&#x7EC4;</span></a></li></ol></div>
             
 
           </div>
