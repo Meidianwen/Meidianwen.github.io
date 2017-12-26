@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="My_Blog">
 <meta property="og:description" content="1.活动图2.用例图3.系统部署图可以使用部署图对系统的物理布局或拓扑进行建模。部署图描述运行时处理节点的配置和部署在这些节点上的工件。部署图通常在开发过程中的实现阶段准备的，他显示分布式中的节点的物理布局、存储在每个节点上的工作以及工作实现的组件和其他元素。节点表示一些硬件设备（例如，计算机、传感器和打印机）以及支持系统运行时环境的其他设备。通信路径和部署关系用于对系统中的连接建模。 考虑C/S">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-26T09:07:24.725Z">
+<meta property="og:updated_time" content="2017-12-26T10:38:31.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="软件工程">
 <meta name="twitter:description" content="1.活动图2.用例图3.系统部署图可以使用部署图对系统的物理布局或拓扑进行建模。部署图描述运行时处理节点的配置和部署在这些节点上的工件。部署图通常在开发过程中的实现阶段准备的，他显示分布式中的节点的物理布局、存储在每个节点上的工作以及工作实现的组件和其他元素。节点表示一些硬件设备（例如，计算机、传感器和打印机）以及支持系统运行时环境的其他设备。通信路径和部署关系用于对系统中的连接建模。 考虑C/S">
@@ -315,6 +315,17 @@
 
           
             
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/25/software-engineering/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/12/25/software-engineering/" itemprop="commentsCount"></span>
+                </a>
+              
+            
           
 
           
@@ -359,11 +370,12 @@
 <h2 id="4-功能结构图"><a href="#4-功能结构图" class="headerlink" title="4.功能结构图"></a>4.功能结构图</h2><p>为了提高软件的可维护性，其中模块独立性是评价软件结构质量的重要依据。模块化就是把程序划分成独立命令且<br>可独立访问的模块，每个模块完成一个功能，把这些模块集成起来构成一个整体，可以完成指定的功能满足用户的需求，<br>模块独立性的指标：</p>
 <ul>
 <li>内聚</li>
-<li>耦合<br>HIPO是软件总体结构描述的一种工具：<blockquote>
+<li>耦合</li>
+</ul>
+<p>HIPO是软件总体结构描述的一种工具：</p>
+<blockquote>
 <p>HIPO图(Hierarchy Plus Input/Processing/Output)图是美国IBM公司70年代发展起来的表示软件系统结构的工具。<br>它既可以描述软件总的模块层次结构–H图(层次图)，又可以描述每个模块输入/输出数据、处理功能及模块调用的详细情况–IPO图。<br>HIPO图以模块分解的层次性以及模块内部输入、处理、输出三大基本部分为基础建立的。</p>
 </blockquote>
-</li>
-</ul>
 <h4 id="4-1-HIPO的H图"><a href="#4-1-HIPO的H图" class="headerlink" title="4.1 HIPO的H图"></a>4.1 HIPO的H图</h4><p>用于描述软件的层次结构，矩形框表示一个模块，矩形框之间的直线表示模块之间的调用关系，同结构图一样未指明调用顺序。</p>
 <h4 id="4-2-HIPO的IPO图"><a href="#4-2-HIPO的IPO图" class="headerlink" title="4.2 HIPO的IPO图"></a>4.2 HIPO的IPO图</h4><p>H图只说明了软件系统由那些模块组成及其控制层次结构，并未说明模块间的信息传递及模块内部的处理。<br>因此对一些重要模块还必须根据数据流图、数据字典及H图绘制具体的IPO图。</p>
 <h4 id="4-3-绘制HIPO的方法"><a href="#4-3-绘制HIPO的方法" class="headerlink" title="4.3 绘制HIPO的方法"></a>4.3 绘制HIPO的方法</h4><blockquote>
@@ -430,6 +442,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
     
   </div>
 
@@ -681,6 +695,21 @@
 
 
 
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytnUMi3Q';
+      var conf = '5a3e81012f723d36c2f7dce08f6d725b';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
 
 
 
