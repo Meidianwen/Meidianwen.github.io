@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -111,7 +111,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
@@ -211,6 +211,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
@@ -237,6 +247,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -273,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/16/hadoop安装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/11/设计模式之中介者模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Meidianwen">
@@ -292,7 +312,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/16/hadoop安装/" itemprop="url">hadoop安装;</a></h1>
+                <a class="post-title-link" href="/2018/10/11/设计模式之中介者模式/" itemprop="url">设计模式之中介者模式</a></h1>
         
 
         <div class="post-meta">
@@ -304,8 +324,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T19:58:44+08:00">
-                2018-01-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-11T11:17:34+08:00">
+                2018-10-11
               </time>
             
 
@@ -314,6 +334,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -324,8 +366,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2018/01/16/hadoop安装/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2018/01/16/hadoop安装/" class="cy_cmt_count" data-xid="2018/01/16/hadoop安装/" itemprop="commentsCount" ></span>
+                <a href="/2018/10/11/设计模式之中介者模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/10/11/设计模式之中介者模式/" class="cy_cmt_count" data-xid="2018/10/11/设计模式之中介者模式/" itemprop="commentsCount" ></span>
                 </a>
               
             
@@ -333,7 +375,7 @@
 
           
           
-             <span id="/2018/01/16/hadoop安装/" class="leancloud_visitors" data-flag-title="hadoop安装;">
+             <span id="/2018/10/11/设计模式之中介者模式/" class="leancloud_visitors" data-flag-title="设计模式之中介者模式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -366,12 +408,12 @@
       
         
           
-          Hadoop的安装折腾了几天终于成功安装并且把环境给部署好了，这一切都归功于一篇文章，在这篇文章中，作者详细的写了部署环境的过程，以及出现问题的解决办法，所以我也不打算在自己写一篇文章了，直接借用他的 here ;
-第一个程序跟着书上的例子，自己手敲了一个WordCount的小程序，首先设置一下cl
+          中介者模式平时写代码的过程中，一个类必然会与其他类产生依赖关系，如果这种依赖关系如网状般错综复杂，那么必然会影响我们的代码逻辑以及执行效率，适当地使用中介者模式可以对这种依赖关系进行解耦使逻辑结构清晰。
+定义及使用场景定义：中介者模式包装了一系列对象相互作用的方式，使得这些对象不必相互明显作用。从而
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/01/16/hadoop安装/#more" rel="contents">
+            <a class="btn" href="/2018/10/11/设计模式之中介者模式/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -422,7 +464,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/25/software-engineering/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/09/算法导论之算法分析/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Meidianwen">
@@ -441,7 +483,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/25/software-engineering/" itemprop="url">软件工程</a></h1>
+                <a class="post-title-link" href="/2018/10/09/算法导论之算法分析/" itemprop="url">算法导论之算法分析</a></h1>
         
 
         <div class="post-meta">
@@ -453,8 +495,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-25T20:01:44+08:00">
-                2017-12-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-09T19:48:05+08:00">
+                2018-10-09
               </time>
             
 
@@ -463,6 +505,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法导论/" itemprop="url" rel="index">
+                    <span itemprop="name">算法导论</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -473,8 +537,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/12/25/software-engineering/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2017/12/25/software-engineering/" class="cy_cmt_count" data-xid="2017/12/25/software-engineering/" itemprop="commentsCount" ></span>
+                <a href="/2018/10/09/算法导论之算法分析/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/10/09/算法导论之算法分析/" class="cy_cmt_count" data-xid="2018/10/09/算法导论之算法分析/" itemprop="commentsCount" ></span>
                 </a>
               
             
@@ -482,7 +546,7 @@
 
           
           
-             <span id="/2017/12/25/software-engineering/" class="leancloud_visitors" data-flag-title="软件工程">
+             <span id="/2018/10/09/算法导论之算法分析/" class="leancloud_visitors" data-flag-title="算法导论之算法分析">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -515,11 +579,17 @@
       
         
           
-          活动图用例图系统部署图可以使用部署图对系统的物理布局或拓扑进行建模。部署图描述运行时处理节点的配置和部署在这些节点上的工件。部署图通常在开发过程中的实现阶段准备的，他显示分布式中的节点的物理布局、存储在每个节点上的工作以及工作实现的组件和其他元素。节点表示一些硬件设备（例如，计算机、传感器和打印机）
+          算法分析算法分析是理论研究是关于 计算机程序性能和 资源利用的研究，如何让程序运行的更快。代码的正确性、安全、可扩展性，尤其 用户友好都要比性能更重要。因此有很多方面都要比性能更重要，但是算法依然是重要的：
+
+算法能够将不可行变成可行，如实时系统
+算法是一种描述程序的语言
+性能是各种方面的前提
+
+算
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/25/software-engineering/#more" rel="contents">
+            <a class="btn" href="/2018/10/09/算法导论之算法分析/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -570,7 +640,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/23/project-pro/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/09/设计模式之访问者模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Meidianwen">
@@ -589,7 +659,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/23/project-pro/" itemprop="url">图书搜索功能的关键实现</a></h1>
+                <a class="post-title-link" href="/2018/10/09/设计模式之访问者模式/" itemprop="url">设计模式之访问者模式</a></h1>
         
 
         <div class="post-meta">
@@ -601,8 +671,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-23T00:53:17+08:00">
-                2017-12-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-09T15:16:16+08:00">
+                2018-10-09
               </time>
             
 
@@ -621,8 +691,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/12/23/project-pro/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2017/12/23/project-pro/" class="cy_cmt_count" data-xid="2017/12/23/project-pro/" itemprop="commentsCount" ></span>
+                <a href="/2018/10/09/设计模式之访问者模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/10/09/设计模式之访问者模式/" class="cy_cmt_count" data-xid="2018/10/09/设计模式之访问者模式/" itemprop="commentsCount" ></span>
                 </a>
               
             
@@ -630,7 +700,7 @@
 
           
           
-             <span id="/2017/12/23/project-pro/" class="leancloud_visitors" data-flag-title="图书搜索功能的关键实现">
+             <span id="/2018/10/09/设计模式之访问者模式/" class="leancloud_visitors" data-flag-title="设计模式之访问者模式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -663,162 +733,12 @@
       
         
           
-          哈工大分词系统PHP与MySQL进行模糊查询并根据匹配度进行排序
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/23/project-pro/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/感想/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Meidianwen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My_Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/18/感想/" itemprop="url">杂文</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-18T15:04:58+08:00">
-                2017-12-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2017/12/18/感想/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2017/12/18/感想/" class="cy_cmt_count" data-xid="2017/12/18/感想/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-             <span id="/2017/12/18/感想/" class="leancloud_visitors" data-flag-title="杂文">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          数据库中存储中文数据库中存储中文，遇到乱码问题，其实也就是一串问号 ?,解决方法,在建表时在最后加一个语句:12345create table tb_name(.........) DEFAULT CHARSET=utf8;
-并且在写数据前，加一个语句,否则还是一串问号：
-
-set names ut
+          访问者模式在访问者模式（Visitor Pattern）中，我们使用了一个访问者类，它改变了元素类的执行算法。通过这种方式，元素的执行算法可以随着访问者改变而改变。这种类型的设计模式属于行为型模式。根据模式，元素对象已接受访问者对象，这样访问者对象就可以处理元素对象上的操作。
+介绍意图：主要将数据结
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/18/感想/#more" rel="contents">
+            <a class="btn" href="/2018/10/09/设计模式之访问者模式/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -869,7 +789,7 @@ set names ut
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/08/设计模式之状态模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Meidianwen">
@@ -888,7 +808,7 @@ set names ut
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/18/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2018/10/08/设计模式之状态模式/" itemprop="url">设计模式之状态模式</a></h1>
         
 
         <div class="post-meta">
@@ -900,8 +820,8 @@ set names ut
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-18T10:02:59+08:00">
-                2017-12-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-08T20:51:30+08:00">
+                2018-10-08
               </time>
             
 
@@ -910,6 +830,28 @@ set names ut
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -920,8 +862,8 @@ set names ut
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/12/18/hello-world/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2017/12/18/hello-world/" class="cy_cmt_count" data-xid="2017/12/18/hello-world/" itemprop="commentsCount" ></span>
+                <a href="/2018/10/08/设计模式之状态模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/10/08/设计模式之状态模式/" class="cy_cmt_count" data-xid="2018/10/08/设计模式之状态模式/" itemprop="commentsCount" ></span>
                 </a>
               
             
@@ -929,7 +871,7 @@ set names ut
 
           
           
-             <span id="/2017/12/18/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2018/10/08/设计模式之状态模式/" class="leancloud_visitors" data-flag-title="设计模式之状态模式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -962,12 +904,1004 @@ set names ut
       
         
           
-          这是我的第一篇博客，希望我可以坚持下去，写下自己平时学习的记录。
+          状态模式在状态模式中，类行为根据其状态而改变。 这种设计模式属于行为模式。在状态模式中，我们创建表示各种状态的对象，以及随状态对象变化而行为变化的上下文对象。
+什么时候使用此模式
+当对象的行为依赖于状态，而该对象必须根据其状态（在运行时)改变其行为 
+当操作带有大量状态相关的、多部分的条件语句
 
-          
+设
+          ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/18/hello-world/#more" rel="contents">
+            <a class="btn" href="/2018/10/08/设计模式之状态模式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/08/设计模式之策略模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meidianwen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/08/设计模式之策略模式/" itemprop="url">设计模式之策略模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-08T20:14:00+08:00">
+                2018-10-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/10/08/设计模式之策略模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/10/08/设计模式之策略模式/" class="cy_cmt_count" data-xid="2018/10/08/设计模式之策略模式/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2018/10/08/设计模式之策略模式/" class="leancloud_visitors" data-flag-title="设计模式之策略模式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          策略模式在策略模式中，可以在运行时更改类行为或其算法。 这种类型的设计模式属于行为模式。在策略模式中，创建表示各种策略对象和其行为根据其策略对象而变化的上下文对象。 策略对象更改上下文对象的执行算法
+什么时候使用此模式
+当你要处理一些仅仅行为不同的相关的类的时候
+当你要隐藏实现细节的时候
+当你要取消
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/08/设计模式之策略模式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/13/设计模式之桥接模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meidianwen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/13/设计模式之桥接模式/" itemprop="url">设计模式之桥接模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-13T17:33:39+08:00">
+                2018-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/09/13/设计模式之桥接模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/09/13/设计模式之桥接模式/" class="cy_cmt_count" data-xid="2018/09/13/设计模式之桥接模式/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2018/09/13/设计模式之桥接模式/" class="leancloud_visitors" data-flag-title="设计模式之桥接模式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          桥接模式在软件系统中，某些类型由于自身的逻辑，他可能会具有两个或多个维度的变化，这时可以利用桥接模式使得这种类型可以沿着多个方向进行变化，且不会因为额外的复杂度。目的是：将抽象部分与实现部分分离，是他们都可以独立的变化   –《设计模式》第一张图里，如果增加一种饮料，需要写两个类，因为此饮料会有中杯
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/13/设计模式之桥接模式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/13/设计模式之适配器模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meidianwen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/13/设计模式之适配器模式/" itemprop="url">设计模式之适配器模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-13T16:56:45+08:00">
+                2018-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/09/13/设计模式之适配器模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/09/13/设计模式之适配器模式/" class="cy_cmt_count" data-xid="2018/09/13/设计模式之适配器模式/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2018/09/13/设计模式之适配器模式/" class="leancloud_visitors" data-flag-title="设计模式之适配器模式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          适配器模式适配器模式作为两个不兼容接口之间的桥梁。这种类型的设计模式属于结构模式，因为该模式组合了两个独立的接口。当一些方法散落在不同的类中，我们可以利用适配器模式来把所有的方法集中在一个类里面，且不会改变原来类的结构。这种模式在用的时候会自己定义一个功能更加全面的接口，然后再创建此抽象接口的子类去
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/13/设计模式之适配器模式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/08/设计模式之抽象工厂模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meidianwen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/08/设计模式之抽象工厂模式/" itemprop="url">设计模式之抽象工厂模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-08T15:31:31+08:00">
+                2018-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/09/08/设计模式之抽象工厂模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/09/08/设计模式之抽象工厂模式/" class="cy_cmt_count" data-xid="2018/09/08/设计模式之抽象工厂模式/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2018/09/08/设计模式之抽象工厂模式/" class="leancloud_visitors" data-flag-title="设计模式之抽象工厂模式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          抽象工厂模式是一个超级工厂，它可以创建工厂的工厂，意思是说他不像工厂模式可以直接创建一个子类的对象，抽象工厂模式可以先创建一个工厂的子类，此子类是一个产生子类的集合，所以此子类还可以创建新的类的对象。也就是说，工厂模式只适合产生一种产品（即所有产品都继承自一个抽象类），但是抽象工厂模式可以产生多个抽
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/08/设计模式之抽象工厂模式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/21/神经网络和深度学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meidianwen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/21/神经网络和深度学习/" itemprop="url">神经网络和深度学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-21T11:31:09+08:00">
+                2018-08-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/深度学习/" itemprop="url" rel="index">
+                    <span itemprop="name">深度学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/08/21/神经网络和深度学习/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/08/21/神经网络和深度学习/" class="cy_cmt_count" data-xid="2018/08/21/神经网络和深度学习/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2018/08/21/神经网络和深度学习/" class="leancloud_visitors" data-flag-title="神经网络和深度学习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          神经网络和深度学习第一周深度学习概论概论这个暑假打算再重新学一编吴恩达老师在网易云课堂上面的一门课程，希望在今后对自己有所帮助，这门课程总共有五部分：
+
+神经网络和深度学习
+提升模型通过改变参数
+结构化的机器学习项目
+卷积神经网络
+自然语言处理 
+
+第一周仅仅讲了一下什么是神经网络，为什么神经网络会
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/21/神经网络和深度学习/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/14/机器学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meidianwen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My_Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/14/机器学习/" itemprop="url">机器学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-14T21:14:37+08:00">
+                2018-08-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/08/14/机器学习/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/08/14/机器学习/" class="cy_cmt_count" data-xid="2018/08/14/机器学习/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2018/08/14/机器学习/" class="leancloud_visitors" data-flag-title="机器学习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          logistic回归logistic回归适用于监督学习且当输出的y是0或1（即二分类问题）二分类，二分类问题中，目标是训练出一个分类器，它以图片的特征向量X作为输入，如果是一个64 x 64的图片，则X便是一个列向量，每个值是，每个通道中从左到右从上到下的色彩值，所以X的维度是64 x 64 x 3
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/14/机器学习/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1008,6 +1942,10 @@ set names ut
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1051,12 +1989,21 @@ set names ut
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -1064,7 +2011,7 @@ set names ut
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1121,7 +2068,7 @@ set names ut
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Gemini
   </a>
 </div>
 
@@ -1160,8 +2107,6 @@ set names ut
   
 
 
-  
-
 
 
 
@@ -1190,9 +2135,6 @@ set names ut
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
-  
-  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-
 
   
 
@@ -1205,6 +2147,13 @@ set names ut
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
 
   
     <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
